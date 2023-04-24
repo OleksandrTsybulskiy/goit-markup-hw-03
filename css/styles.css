@@ -76,13 +76,6 @@ body {
   align-items: center;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 24px;
-  padding-top: 24px;
-}
-
 .header {
   background-color: var(--color-white);
 }
@@ -106,6 +99,14 @@ body {
 
 /* Navigation */
 
+.nav-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  align-items: center;
+}
+
 .nav-list {
   font-weight: 500;
   font-size: 16px;
@@ -114,6 +115,7 @@ body {
   gap: 40px;
   display: flex;
   margin-right: 332px;
+  padding: 24px 0;
 }
 
 .nav-item {
@@ -162,6 +164,7 @@ body {
 
 .hero-section {
   background-color: var(--color-navy-blue);
+  padding: 188px 0;
 }
 
 .order-button {
@@ -174,6 +177,10 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--color-white);
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .order-button:hover {
@@ -193,12 +200,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-white);
   text-align: center;
+  max-width: 496px;
 }
 
 /* Services */
+.services-section {
+  padding: 120px 0;
+}
 
 .list-services {
-  list-style: none;
+  display: flex;
+  gap: 24px;
 }
 
 .serv-desc {
@@ -215,12 +227,26 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
+  margin-bottom: 8px;
+}
+
+.serv-list-item {
+  flex-basis: calc(((100% - 3 * 24px) / 4));
 }
 
 /* Services example */
 
+.ex-section {
+  padding-bottom: 120px;
+}
+
 .list-examples {
-  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.ex-list-item {
+  flex-basis: calc((100% - 3 * 16px) / 3);
 }
 
 .title-examples {
@@ -231,12 +257,14 @@ body {
   text-transform: capitalize;
   color: var(--color-navy-blue);
   text-align: center;
+  margin-bottom: 72px;
 }
 
 /* Team */
 
 .team-section {
   background-color: var(--color-cloud);
+  padding: 120px 0;
 }
 
 .title-team {
@@ -247,6 +275,7 @@ body {
   text-transform: capitalize;
   color: var(--color-navy-blue);
   text-align: center;
+  margin-bottom: 72px;
 }
 
 .employee-name {
@@ -255,6 +284,8 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .duty {
@@ -263,20 +294,32 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-slate);
+  text-align: center;
 }
 
 .list-team {
-  list-style: none;
+  display: flex;
+  gap: 24px;
 }
 
 .team-frame {
   background-color: var(--color-white);
+  flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.team-head {
+  border-radius: 0 0 4px 4px;
+}
+
+.emp-info {
+  padding: 32px 16px;
 }
 
 /* Footer */
 
 .footer {
   background-color: var(--color-navy-blue);
+  padding: 100px 0;
 }
 
 .link-title-secondary {
@@ -288,14 +331,27 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-cloud);
+  width: 264px;
+}
+
+.footer-link {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 /* Portfolio page */
 
 /* Buttons */
 
+.portfolio-section {
+  padding: 96px 0 120px;
+}
+
 .list-filter {
-  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
 }
 
 .filter-button {
@@ -306,25 +362,42 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--color-iris);
-  cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--color-cornflower);
+  border-radius: 4px;
 }
 
 .filter-button:hover {
   background: var(--color-ocean);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--color-white);
+  border: 1px solid transparent;
 }
 
 .filter-button:focus {
   background: var(--color-ocean);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--color-white);
+  border: 1px solid transparent;
 }
 
 /* Examples portfolio */
 
 .list-ex-port {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.ex-list-item {
+  flex-basis: calc((100% - 2 * 24px) / 3);
+}
+
+.ex-item {
+  padding: 32px 16px;
+  border: 1px solid var(--color-cornflower);
+  border-top: none;
 }
 
 .serv-ex-title {
@@ -333,6 +406,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
+  margin-bottom: 8px;
 }
 
 .serv-ex-desc {
