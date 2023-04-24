@@ -1,3 +1,37 @@
+/* Reset */
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* CSS var */
 :root {
   --color-iris: #4d5ae5;
   --color-ocean: #404bbf;
@@ -13,6 +47,8 @@
   --color-dairy: #fcfcfc;
 }
 
+/* Body */
+
 body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
@@ -22,7 +58,30 @@ body {
   color: var(--color-slate);
 }
 
+/* Container */
+
+.container {
+  max-width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+
 /* Header section */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
 
 .header {
   background-color: var(--color-white);
@@ -38,6 +97,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-iris);
+  margin-right: 76px;
 }
 
 .link-title-primary {
@@ -46,12 +106,14 @@ body {
 
 /* Navigation */
 
-.list {
+.nav-list {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  list-style: none;
+  gap: 40px;
+  display: flex;
+  margin-right: 332px;
 }
 
 .nav-item {
@@ -78,7 +140,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-slate);
-  list-style: none;
+  gap: 40px;
+  display: flex;
 }
 
 .contact {
@@ -111,7 +174,6 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--color-white);
-  cursor: pointer;
 }
 
 .order-button:hover {
@@ -228,7 +290,7 @@ body {
   color: var(--color-cloud);
 }
 
-/* Portfolio */
+/* Portfolio page */
 
 /* Buttons */
 
