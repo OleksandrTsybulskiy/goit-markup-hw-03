@@ -64,9 +64,6 @@ body {
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 /* Header section */
@@ -417,6 +414,3 @@ body {
   color: var(--color-slate);
 }
 
-.link-project {
-  text-decoration: none;
-}
