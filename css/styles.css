@@ -116,13 +116,10 @@ body {
   padding: 24px 0;
 }
 
-.menu-item {
-  padding: 24px 0;
-}
-
 .nav-item {
   text-decoration: none;
   color: var(--color-navy-blue);
+  padding: 24px 0;
 }
 
 .nav-item:hover {
